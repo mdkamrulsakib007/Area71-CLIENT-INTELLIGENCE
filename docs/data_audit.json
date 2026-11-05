@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "source_name": "MPS Client Updates (NEW).xlsx",
+    "sha256": "a858d1b6dbd81e9d0827d6e2afe2549f819d3e9a23d08e0cf8c058c20f8ad732",
+    "import_scope": "Main MPS Client Info tab is the canonical register; other five tabs are archived verbatim, not added as duplicate products.",
+    "client_only_rows": [
+      271,
+      366,
+      374,
+      376,
+      417,
+      452,
+      459,
+      465,
+      487,
+      654,
+      744
+    ],
+    "link_counts": {
+      "explicit": 422,
+      "merged": 161,
+      "neighbor_inferred": 9
+    },
+    "source_rows_per_sheet": {
+      "MPS Client Info": 705,
+      "Xavier": 705,
+      "Karimul MPS": 167,
+      "Riyadh": 259,
+      "Sample Order": 16,
+      "Karimul": 705
+    },
+    "cached_formula_cells": 5350,
+    "source_comments": 245,
+    "source_sheet_count": 6
+  },
+  "summary": {
+    "clients": 183,
+    "products": 592,
+    "linked_products": 592,
+    "linked_by_method": {
+      "explicit": 422,
+      "merged": 161,
+      "neighbor_inferred": 9
+    },
+    "markets": 6,
+    "total_sales": 494956.88,
+    "ad_sales": 273969.87,
+    "ad_spend": 79008.97,
+    "status_distribution": {
+      "Live": 376,
+      "Shipping STOP": 28,
+      "VAT/WEEE/Battery Reg": 6,
+      "No Production": 21,
+      "Shipmnet Processing": 25,
+      "Complaince Issue": 11,
+      "Production Complete": 1,
+      "Not set": 120,
+      "Out of Stock": 2,
+      "Shipment Done": 2
+    },
+    "marketplace": [
+      {
+        "marketplace": "UAE",
+        "product_count": 102,
+        "total_sales": 178448.5,
+        "ad_sales": 74841.03,
+        "ad_spend": 18312.76,
+        "live_count": 65,
+        "blocked_count": 25,
+        "sales_rows": 67,
+        "roas": 4.09
+      },
+      {
+        "marketplace": "CA",
+        "product_count": 119,
+        "total_sales": 90108.01,
+        "ad_sales": 64156.17,
+        "ad_spend": 17949.64,
+        "live_count": 83,
+        "blocked_count": 7,
+        "sales_rows": 83,
+        "roas": 3.57
+      },
+      {
+        "marketplace": "UK",
+        "product_count": 123,
+        "total_sales": 81766.68,
+        "ad_sales": 45698.34,
+        "ad_spend": 13044.32,
+        "live_count": 79,
+        "blocked_count": 3,
+        "sales_rows": 79,
+        "roas": 3.5
+      },
+      {
+        "marketplace": "IT",
+        "product_count": 103,
+        "total_sales": 78668.12,
+        "ad_sales": 45647.51,
+        "ad_spend": 13576.35,
+        "live_count": 69,
+        "blocked_count": 5,
+        "sales_rows": 69,
+        "roas": 3.36
+      },
+      {
+        "marketplace": "USA",
+        "product_count": 105,
+        "total_sales": 43836.63,
+        "ad_sales": 31174.24,
+        "ad_spend": 12016.08,
+        "live_count": 62,
+        "blocked_count": 2,
+        "sales_rows": 62,
+        "roas": 2.59
+      },
+      {
+        "marketplace": "GER",
+        "product_count": 31,
+        "total_sales": 22128.94,
+        "ad_sales": 12452.58,
+        "ad_spend": 4109.82,
+        "live_count": 18,
+        "blocked_count": 3,
+        "sales_rows": 18,
+        "roas": 3.03
+      },
+      {
+        "marketplace": "Not set",
+        "product_count": 9,
+        "total_sales": 0,
+        "ad_sales": 0,
+        "ad_spend": 0,
+        "live_count": 0,
+        "blocked_count": 0,
+        "sales_rows": 0,
+        "roas": null
+      }
+    ],
+    "alerts": {
+      "critical": 46,
+      "high": 39,
+      "medium": 57
+    },
+    "source_sheets": [
+      {
+        "sheet": "Karimul",
+        "rows": 705
+      },
+      {
+        "sheet": "Karimul MPS",
+        "rows": 167
+      },
+      {
+        "sheet": "MPS Client Info",
+        "rows": 705
+      },
+      {
+        "sheet": "Riyadh",
+        "rows": 259
+      },
+      {
+        "sheet": "Sample Order",
+        "rows": 16
+      },
+      {
+        "sheet": "Xavier",
+        "rows": 705
+      }
+    ]
+  },
+  "alerts_by_rule": {
+    "compliance_hold": 17,
+    "shipping_hold": 29,
+    "client_link_review": 9,
+    "high_acos": 29,
+    "organic_mismatch": 1,
+    "ad_sales_gt_total": 8,
+    "missing_marketplace": 9,
+    "source_formula_error_ad": 39,
+    "tacos_mismatch": 1
+  },
+  "alerts_by_severity": {
+    "critical": 46,
+    "high": 39,
+    "medium": 57
+  },
+  "critical_examples": [
+    {
+      "alert_key": "compliance_hold:10",
+      "source_row": 13,
+      "title": "Compliance requirement / hold",
+      "detail": "Product status reads “VAT/WEEE/Battery Reg”. This is a recorded status, not confirmation of the cause."
+    },
+    {
+      "alert_key": "compliance_hold:119",
+      "source_row": 142,
+      "title": "Compliance requirement / hold",
+      "detail": "Product status reads “Complaince Issue”. This is a recorded status, not confirmation of the cause."
+    },
+    {
+      "alert_key": "compliance_hold:139",
+      "source_row": 165,
+      "title": "Compliance requirement / hold",
+      "detail": "Product status reads “Complaince Issue”. This is a recorded status, not confirmation of the cause."
+    },
+    {
+      "alert_key": "compliance_hold:145",
+      "source_row": 172,
+      "title": "Compliance requirement / hold",
+      "detail": "Product status reads “Complaince Issue”. This is a recorded status, not confirmation of the cause."
+    },
+    {
+      "alert_key": "compliance_hold:199",
+      "source_row": 238,
+      "title": "Compliance requirement / hold",
+      "detail": "Product status reads “Complaince Issue”. This is a recorded status, not confirmation of the cause."
+    },
+    {
+      "alert_key": "compliance_hold:200",
+      "source_row": 239,
+      "title": "Compliance requirement / hold",
+      "detail": "Product status reads “VAT/WEEE/Battery Reg”. This is a recorded status, not confirmation of the cause."
+    },
+    {
+      "alert_key": "compliance_hold:203",
+      "source_row": 243,
+      "title": "Compliance requirement / hold",
+      "detail": "Product status reads “VAT/WEEE/Battery Reg”. This is a recorded status, not confirmation of the cause."
+    },
+    {
+      "alert_key": "compliance_hold:207",
+      "source_row": 248,
+      "title": "Compliance requirement / hold",
+      "detail": "Product status reads “VAT/WEEE/Battery Reg”. This is a recorded status, not confirmation of the cause."
+    },
+    {
+      "alert_key": "compliance_hold:221",
+      "source_row": 265,
+      "title": "Compliance requirement / hold",
+      "detail": "Product status reads “VAT/WEEE/Battery Reg”. This is a recorded status, not confirmation of the cause."
+    },
+    {
+      "alert_key": "compliance_hold:227",
+      "source_row": 273,
+      "title": "Compliance requirement / hold",
+      "detail": "Product status reads “VAT/WEEE/Battery Reg”. This is a recorded status, not confirmation of the cause."
+    }
+  ]
+}

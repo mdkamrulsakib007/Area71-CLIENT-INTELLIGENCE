@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light"><meta name="description" content="Area71 local MPS client intelligence dashboard">
+<title>Area71 | MPS Client Intelligence</title>
+<link rel="stylesheet" href="/style.css">
+<script src="/app.js" defer></script>
+</head>
+<body>
+<div class="app-shell">
+ <aside class="sidebar">
+  <div class="brand"><div class="brand-icon">71</div><div><strong>area71</strong><span>CLIENT INTELLIGENCE</span></div></div>
+  <div class="side-caption">WORKSPACE</div>
+  <nav id="navigation" aria-label="Main navigation">
+   <button type="button" class="nav-item active" data-nav="dashboard"><span class="nav-icon">◈</span> Overview</button>
+   <button type="button" class="nav-item" data-nav="products"><span class="nav-icon">▦</span> Product records</button>
+   <button type="button" class="nav-item" data-nav="clients"><span class="nav-icon">♙</span> Client directory</button>
+   <div class="side-caption second">INTELLIGENCE TOOLS</div>
+   <button type="button" class="nav-item" data-nav="alerts"><span class="nav-icon">◇</span> Anomaly Guard <span id="alert-nav-count" class="nav-count">–</span></button>
+   <button type="button" class="nav-item" data-nav="ask"><span class="nav-icon">⌕</span> Ask the Data</button>
+   <button type="button" class="nav-item" data-nav="brief"><span class="nav-icon">▤</span> Client Brief</button>
+   <div class="side-caption second">DATA CONTROLS</div>
+   <button type="button" class="nav-item" data-nav="archive"><span class="nav-icon">▥</span> Source archive</button>
+   <button type="button" class="nav-item" data-nav="audit"><span class="nav-icon">↻</span> Activity history</button>
+  </nav>
+  <div class="side-bottom"><div class="local-chip"><span class="status-pulse"></span> LOCAL &amp; PRIVATE</div><p>Single-user workspace<br>Original sources preserved<br>No external data transfer</p><button type="button" id="backup-btn" class="backup-btn">↧ &nbsp; Create database backup</button></div>
+ </aside>
+ <div class="workspace">
+  <header class="topbar"><div class="topbar-left"><span class="breadcrumb">Area71 / Managed Partner Service</span><span class="topbar-title" id="page-heading">Overview</span></div><div class="topbar-right"><span class="desktop-only">SOURCE · MPS CLIENT UPDATES (NEW)</span><span class="round-avatar">A71</span></div></header>
+  <main id="content" tabindex="-1"><div class="loading">Loading source database…</div></main>
+  <footer class="page-footer"><span>Area71 Client Intelligence · Source-first and auditable</span><span>Financial figures reflect recorded source data, not live Amazon accounts.</span></footer>
+ </div>
+</div>
+<dialog id="modal"><form method="dialog" id="modal-form"><div class="modal-header"><div><span class="eyebrow" id="modal-label">RECORD</span><h2 id="modal-heading">Edit record</h2></div><button type="button" id="close-modal" class="icon-close" aria-label="Close">×</button></div><div id="modal-body" class="modal-body"></div><div class="modal-footer"><button type="button" id="cancel-modal" class="btn btn-ghost">Cancel</button><button type="submit" id="save-modal" class="btn btn-primary">Save changes</button></div></form></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+</body></html>
